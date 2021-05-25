@@ -16,10 +16,7 @@
 // if none print number
 
 for (var i = 1; i <= 100; i++) {
-    var threetempCheck = i % 3 == 0;
-    var fivetempCheck = i % 5 == 0;
-    var bothTempCheck = i % 5 == 0 && i % 3 == 0;
-    if (bothTempCheck == true) {
+    if (i % 5 == 0 && i % 3 == 0) {
         console.log("Fizzbuzz " + (i));
     } else if (i % 3 == 0) {
         console.log("Fizz " + (i))
@@ -30,3 +27,4 @@ for (var i = 1; i <= 100; i++) {
     }
 }
     //console.log(bothTempCheck)
+    // bothTempCheck == true
